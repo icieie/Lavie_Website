@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Marcellus&family=Yeseva+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #E7FFE2;
+      padding-top: 120px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    .card1 {
+      border-radius: 13px;
+      padding: 20px;
+      margin: auto;
+      background: #8E96DD;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 92%;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card2 {
+      border-radius: 13px;
+      padding: 20px;
+      margin: auto;
+      background: #F4AFCD;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 100%;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card3 {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .card4 {
+      padding: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text {
+      font-size: 40px;
+      font-family: 'Yeseva One', cursive;
+      color: #9D5758;
+      letter-spacing: 5px;
+      margin-left: 10px;
+      margin-top: 0px;
+      margin-bottom: 7px;
+      padding-top: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin: 5px;
+      justify-content: space-between;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .grid-item1 {
+      padding: 0px;
+      text-align: center;
+      border-radius: 5px;
+      width: auto;
+      grid-column: 1 / span 3;
+    }
+
+    .grid-item2 {
+      padding: 0px;
+      margin: 0px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .grid-item3,
+    .grid-item4 {
+      padding: 0px;
+      width: 100%;
+    }
+
+    .lavie {
+      display: flex;
+      flex-wrap: wrap;
+      place-items: center;
+      margin-left: 15px;
+    }
+
+    .lavietext {
+      margin-top: 5px;
+      margin-left: 20px;
+      margin-bottom: 27px;
+      font-family: 'Marcellus', serif;
+      font-size: 43px;
+      letter-spacing: 13px;
+    }
+
+    .laviepic {
+      margin-top: 5px;
+      margin-left: 15px;
+      margin-bottom: 27px;
+    }
+
+    .ml {
+        margin: 0px;
+    }
+
+    .text1 {
+      list-style-type: disc;
+      text-align: left;
+      font-size: 27px;
+      font-family: 'EB Garamond', serif;
+      color: black;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      padding: 10px;
+      margin-left: 7px;
+      text-align: justify;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="lavie">
+        <img src="lavie.png" alt="lavie" width="60" class="laviepic">
+        <p class="lavietext">LAVIE</p>
+      </div>
+
+      <div class="card1">
+        <div class="grid-item2">
+          <div class="card3">
+            <img src="title.png" alt="lavie" height="100">
+          </div>
+        </div>
+        
+        <div class="cards">
+          <div class="grid-item3">
+                <img src="memorylane.png" alt="memorylane" class="ml" width="95%">
+          </div>
+        </div>
+
+        <div class="card4">
+            <div class="grid-item5">
+              <div class="card3">
+                  <a href="index.html">
+                      <img src="back1.png" alt="Click me" class="image-link" width="100">
+                  </a>
+                  <p class="text"> documentary -> </p>
+                  <a href="deya.pdf">
+                    <img src="memory lane.png" alt="Click me" class="image-link" width="100">
+                </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

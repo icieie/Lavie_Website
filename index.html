@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Yeseva+One&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #E7FFE2;
+      padding-top: 120px;
+      padding-bottom: 100px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    .card1 {
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      padding: 20px;
+      margin: auto;
+      background: #FFC8C9;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 662px;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card1:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card2 {
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      padding-top: 0px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background: #8E96DD;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 384px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .card2:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card3 {
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      padding-top: 59px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background: #00A8C6;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 324px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .card3:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card4 {
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      padding-top: 59px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background: #D5ECFF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 324px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .card4:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card5 {
+      border: 1px solid #ccc;
+      border-radius: 13px;
+      padding-top: 59px;
+      padding-right: 0px;
+      padding-left: 0px;
+      background: #E1B1EF;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: auto;
+      height: 324px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .card5:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-content1 {
+      font-size: 40px;
+      font-family: 'Yeseva One', cursive;
+      color: #9D5758;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      height: 10%;
+    }
+
+    .card-content2 {
+      font-size: 35px;
+      font-family: 'Yeseva One', cursive;
+      color: #FDDDEB;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      height: 20%;
+    }
+
+    .card-content3 {
+      font-size: 35px;
+      font-family: 'Yeseva One', cursive;
+      color: #BDEDF6;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      height: 20%;
+    }
+
+    .card-content4 {
+      font-size: 35px;
+      font-family: 'Yeseva One', cursive;
+      color: #9BB9F4;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      height: 20%;
+    }
+
+    .card-content5 {
+      font-size: 35px;
+      font-family: 'Yeseva One', cursive;
+      color: #B26DC6;
+      display: flex;
+      margin: auto;
+      flex-direction: column;
+      align-items: center;
+      height: 20%;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .grid-item {
+      padding: 0px;
+      text-align: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .grid-item1 {
+      padding: 0px;
+      text-align: center;
+      border-radius: 5px;
+      width: auto;
+      grid-column: 1 / span 2;
+    }
+
+    .lavie {
+      display: flex;
+      flex-wrap: wrap;
+      place-items: center;
+      margin-left: 15px;
+    }
+
+    .item {
+      flex: 0 0 50%;
+    }
+
+    .lavietext {
+      margin-top: 5px;
+      margin-left: 20px;
+      margin-bottom: 27px;
+      font-family: 'Marcellus', serif;
+      font-size: 43px;
+      letter-spacing: 13px;
+    }
+
+    .laviepic {
+      margin-top: 5px;
+      margin-left: 15px;
+      margin-bottom: 27px;
+    }
+
+    .songs {
+      width: 100%;
+    }
+
+    .gifts {
+      width: 100%;
+    }
+
+    .memorylane {
+      width: 75%;
+    }
+
+    .surprise {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item1">
+      <div class="lavie">
+        <img src="lavie.png" alt="lavie" width="60" class="laviepic">
+        <p class="lavietext">LAVIE</p>
+      </div>
+      <div class="card1">
+        <a href="letters.html">
+          <img src="letters.png" alt="letters" width="400">
+        </a>
+          <p class="card-content1">letters</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card2">
+        <a href="memorylane.html">
+          <img src="memory lane.png" alt="memorylane" class="memorylane">
+        </a>
+          <p class="card-content2">memory<br>lane</p>
+      </div>
+
+      <div class="card3">
+        <a href="songs.html">
+          <img src="songs.png" alt="songs" class="songs">
+        </a>
+          <p class="card-content3">songs</p>
+      </div>
+    </div>
+
+    <div class="grid-item">
+      <div class="card4">
+        <a href="gift.html">
+          <img src="gifts.png" alt="gifts" class="gifts">
+        </a>
+        <p class="card-content4">gift</p>
+      </div>
+
+      <div class="card5">
+        <a href="flower.html">
+          <img src="surprise.png" alt="surprise" class="surprise">
+        </a>
+        <p class="card-content5">surprise</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
